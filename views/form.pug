@@ -2,9 +2,9 @@ extends layout
 
 block content 
     h1 #{title}
-    form( method="POST" action="/new") 
-        label Author 
-        input(type="text")
-        label Text 
-        input(type="text")
-        button(type="submit")
+    form( method='POST' action='/new') 
+        label Author:
+        input(type='text' name='authorName')
+        label Text:
+        input(type='text' name='messageText')
+        button(type='submit') Submit 
